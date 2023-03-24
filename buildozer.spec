@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,certifi,charset-normalizer,docutils,idna,Kivy==2.1.0,Kivy-Garden,numpy,opencv-python,Pygments,requests,urllib3
+requirements = python3,certifi,charset-normalizer,docutils,idna,Kivy==1.11.0,Kivy-Garden,numpy,opencv-python,Pygments,requests,urllib3
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
