@@ -6,6 +6,8 @@ from kivy.lang import Builder
 import numpy as np
 import cv2
 
+from android.permissions import request_permissions, Permission
+import time
 
 Builder.load_file("myapplayout.kv")
 
@@ -38,7 +40,6 @@ class AndroidCamera(Camera):
         self.counter += 1
         flipped = np.flip(frame_rgb, 0)
         buf = flipped.tostring()
-        self.texture.blit_buffer(buf, colorfmt='rgb', bufferfmt='ubyte')
 
 class MyLayout(BoxLayout):
     pass
@@ -46,6 +47,10 @@ class MyLayout(BoxLayout):
 
 class MyApp(App):
     def build(self):
+        request_permissions([
+        Permission.CAMERA,
+        Permission.WRITE_EXTERNAL_STORAGE,
+        Permission.READ_EXTERNAL_STORAGE ])
         return MyLayout()
 
 
