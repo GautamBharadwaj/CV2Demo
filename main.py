@@ -6,7 +6,6 @@ from kivy.lang import Builder
 import numpy as np
 import cv2
 
-import torch, torchvision
 import detectron2
 from detectron2.utils.logger import setup_logger
 import numpy as np
