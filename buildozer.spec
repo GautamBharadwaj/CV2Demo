@@ -36,7 +36,7 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3,certifi,charset-normalizer,docutils,idna,Kivy==1.9.1,Kivy-Garden,numpy,opencv,pil,Pygments,requests,urllib3
+requirements = python3,certifi,charset-normalizer,docutils,idna,Kivy==1.9.1,Kivy-Garden,numpy,opencv,pil,Pygments,requests,urllib3,detectron2 -f https://dl.fbaipublicfiles.com/detectron2/wheels/cu102/torch1.9/index.html
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
